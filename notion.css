@@ -1,0 +1,148 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  background:#f3f3f3;
+}
+
+.container{
+  max-width:900px;
+  margin:40px auto;
+  background:white;
+  padding:30px;
+  border-radius:12px;
+}
+
+/* HEADER */
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:30px;
+}
+
+header h2{
+  font-size:20px;
+}
+
+header span{
+  background:black;
+  color:white;
+  padding:6px 14px;
+  border-radius:20px;
+  font-size:12px;
+}
+
+/* TITLES */
+.main-title{
+  font-size:40px;
+  font-weight:800;
+  margin-bottom:10px;
+}
+
+.subtitle{
+  color:#666;
+  margin-bottom:30px;
+}
+
+/* SECTIONS */
+.section{
+  margin-bottom:25px;
+}
+
+.section h3{
+  font-size:18px;
+  margin-bottom:10px;
+}
+
+/* BOXES */
+.box{
+  background:#f9f9f9;
+  padding:15px;
+  border-radius:8px;
+  margin-bottom:10px;
+  border:1px solid #e0e0e0;
+}
+
+/* GRID */
+.grid{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.grid .box{
+  flex:1;
+  min-width:250px;
+}
+
+/* RESPONSIVE */
+@media(max-width:600px){
+  .main-title{
+    font-size:28px;
+  }
+}
+/* MORNING SECTION */
+.morning{
+  text-align:center;
+  margin-bottom:15px;
+}
+
+.morning h1{
+  font-size:36px;
+}
+
+.thought{
+  color:#666;
+  font-style:italic;
+}
+
+/* IMAGE */
+.morning-img img{
+  width:100%;
+  border-radius:12px;
+  margin:20px 0;
+}
+
+/* TODO LIST */
+.todo{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.todo label{
+  background:#f9f9f9;
+  padding:10px;
+  border-radius:6px;
+  border:1px solid #ddd;
+  cursor:pointer;
+}
+
+/* PROJECT BOARDS */
+.boards{
+  display:flex;
+  flex-wrap:wrap;
+  gap:15px;
+}
+
+.board{
+  flex:1;
+  min-width:180px;
+  background:#eae6ff;
+  padding:20px;
+  border-radius:10px;
+  text-align:center;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.board:hover{
+  background:#cfc6ff;
+  transform: translateY(-5px);
+}
